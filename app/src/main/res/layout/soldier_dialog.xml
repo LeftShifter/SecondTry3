@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/soldier_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="500dp"
+            android:text="Button" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/chubric_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/soldier" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cost"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/physical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="physical"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/intelligence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="intelligence"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/loyalty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="loyalty"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/soldier_gen1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="15dp"
+                            android:soundEffectsEnabled="false"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <ImageButton
+                            android:id="@+id/soldier_gen2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <ImageButton
+                            android:id="@+id/soldier_gen3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <ImageButton
+                            android:id="@+id/soldier_gen4"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <ImageButton
+                            android:id="@+id/soldier_gen5"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@mipmap/ic_launcher"
+                            app:layout_column="0"
+                            app:layout_row="1" />
+
+                        <ImageButton
+                            android:id="@+id/soldier_gen6"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@mipmap/ic_launcher"
+                            app:layout_column="1"
+                            app:layout_row="1" />
+
+                        <ImageButton
+                            android:id="@+id/soldier_gen7"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <ImageButton
+                            android:id="@+id/soldier_gen8"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@mipmap/ic_launcher" />
+
+                    </androidx.gridlayout.widget.GridLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="320dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/gen1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/soldier2" />
+
+                <ImageButton
+                    android:id="@+id/gen2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/soldier2" />
+
+                <ImageButton
+                    android:id="@+id/gen3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/soldier2" />
+
+                <ImageButton
+                    android:id="@+id/gen4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/soldier2" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="550dp"
+                android:layout_height="25dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
